@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Officer Campaign | All Are Welcome</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=1400&q=80') center/cover;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    color: #facc15;
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 800px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 15px 35px;
+    background: #facc15;
+    color: #0f172a;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 38px;
+    color: #facc15;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.competition {
+    text-align: center;
+}
+
+.vs {
+    font-size: 48px;
+    margin: 30px 0;
+    color: #facc15;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>All Are Welcome, <br><span>You Could Be One of the Greats</span></h1>
+    <p>
+        Sport at Manchester Metropolitan University is not about background, 
+        experience, or popularity — it’s about opportunity, unity and greatness.
+        If elected as Sports Officer, I will make sure everyone has a safe place to belong.
+    </p>
+    <p>
+        Let's make a Change Together !
+    </p>
+    <p> 
+
+    </p>
+    <!-- COUNTDOWN TIMER -->
+<div class="countdown" id="countdown">
+    <div class="time-box">
+        <h2 id="days">04</h2>
+        <span>DAYS</span>
+    </div>
+    <div class="time-box">
+        <h2 id="hours">00</h2>
+        <span>HOURS</span>
+    </div>
+    <div class="time-box">
+        <h2 id="minutes">00</h2>
+        <span>MINUTES</span>
+    </div>
+    <div class="time-box">
+        <h2 id="seconds">00</h2>
+        <span>SECONDS</span>
+    </div>
+</div>
+
+<a href="https://www.theunionmmu.org/student-voice/student-officer-elections/candidates-revealed?utm_source=website&utm_medium=announcementbar&utm_campaign=20261802_elections2026_announcementbar_candidatesrevealed"
+class="btn">Voting opens soon...</a>
+</section>
+
+<!-- HALL OF GREATS -->
+<section>
+    <h2 class="section-title">The Greats Among Us</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="Inspiritional.jpeg">
+            <img src="Leah Williamson.jpg">
+            <h3>Future Champions</h3>
+            <p>Every student has potential. You could be the next name remembered.</p>
+        </div>
+
+        <div class="card">
+            <img src="Day 3 Adele Nicoll 2.jpg">
+            <h3>Leaders on the Field</h3>
+            <p>Leadership isn’t assigned — it’s developed through sport.</p> <br>
+            <img src="3278BAP0041_Students Union.jpg.webp">
+            <h3>So ask yourself why not you?</h3>
+            <p>Yes YOU !!!!!</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80">
+            <h3>Everyday Greatness Can be Born</h3>
+            <p>From first-timers to athletes — all are welcome.</p>
+        </div>
+    </div>
+</section>
+
+<!-- MANCHESTER SPORTS FAIR -->
+<section id="fair" class="highlight">
+    <h2 class="section-title">Introducing</h2>
+    <h2 class="section-title">Manchester Sports Fair</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="Manchester Regional center.avif">
+            <h3>Hosted at Manchester Regional Arena</h3>
+            <p>A city landmark transformed into a festival of sport and unity.</p>
+            <img src="Eagles Mascot.jpeg">
+            <h3>A vibrant fairground atmosphere featuring stalls, games, music and student energy.</h3>
+        </div>
+
+        <div class="card">
+            <img src="Website background Size (3).png.webp">
+            <img src="Website background Size (1)_2.png (1).webp">
+            <img src="54428137036_12327def8e_o.jpg.webp">
+            <h3>MMU Sport teams Showcase</h3>
+        </div>
+    </div>
+
+    <p style="margin-top:40px; text-align:center; max-width:900px; margin-left:auto; margin-right:auto;">
+        A collaborative annual sports festival bringing together 
+        Manchester Metropolitan University and University of Manchester. 
+        Not rivals. Not divided. United through sport.
+    </p>
+</section>
+
+<!-- INTERACTIVE GAMES -->
+<section>
+    <h2 class="section-title">Interactive Games & Experiences</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🎯 Human Bingo</h3>
+            <p>
+                Meet new students by completing challenges like 
+                "Find someone who plays 3 sports" or 
+                "Find a first-year rugby player."
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎭 Mystery Match</h3>
+            <p>
+                Randomly paired teammates compete in mini challenges. 
+                Break barriers. Build connections.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Speed Tournaments</h3>
+            <p>
+                10-minute mini matches across multiple sports — 
+                fast, fun, and competitive.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FRIENDLY COMPETITION -->
+<section class="competition highlight">
+    <h2 class="section-title">The Friendly Face-Off</h2>
+
+    <h3>Manchester Metropolitan University</h3>
+    <div class="vs">VS</div>
+    <h3>University of Manchester</h3>
+
+    <p style="margin-top:30px; max-width:800px; margin-left:auto; margin-right:auto;">
+        A light-hearted competition between student representatives.
+        Tug-of-war. Relay races. Penalty shootouts.
+        Winners take home the Unity Trophy.
+        But everyone leaves a winner.
+    </p>
+</section>
+
+<footer>
+    Vote for Inclusion. Vote for Opportunity. Vote for Greatness. <br> <br>
+    Vote Anuoluwapo Adeniji <br> <br>
+    Student Union Sports Officer | Manchester Metropolitan University
+</footer>
+
+<script>
+// SET YOUR VOTING DEADLINE HERE
+const votingDeadline = new Date("2026-02-23T18:00:00").getTime();
+
+const countdownFunction = setInterval(function() {
+
+    const now = new Date().getTime();
+    const distance = votingDeadline - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").style.display = "none";
+        document.getElementById("expired").style.display = "block";
+    }
+
+}, 1000);
+</script>
+
+</body>
+</html>
