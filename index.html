@@ -113,11 +113,33 @@ h1, h2, h3 {
     color: #facc15;
 }
 
+
 footer {
     text-align: center;
     padding: 30px;
     background: #020617;
     font-size: 14px;
+    
+    .footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-message {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-sub {
+    font-size: 14px;
+    opacity: 0.8;
+}
 }
 
 @media (max-width: 768px) {
@@ -274,11 +296,18 @@ class="btn">Voting opens soon...</a>
 </section>
 
 <footer>
-    Vote for Inclusion. Vote for Opportunity. Vote for Greatness. <br> <br>
-    Vote Anuoluwapo Adeniji <br> <br>
-    Student Union Sports Officer | Manchester Metropolitan University
-</footer>
 
+    <img src="the-union-logo.png" alt="The Union Logo" class="footer-logo">
+
+    <p class="footer-message">
+        Vote for Inclusion. Vote for Opportunity. Vote for Greatness.
+    </p>
+
+    <p class="footer-sub">
+        Sports Officer Campaign | Manchester Metropolitan University
+    </p>
+
+</footer>
 <script>
 // SET YOUR VOTING DEADLINE HERE
 const votingDeadline = new Date("2026-02-23T18:00:00").getTime();
@@ -309,6 +338,7 @@ const countdownFunction = setInterval(function() {
 
 </body>
 </html>
+
 
 
 
