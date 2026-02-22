@@ -6,7 +6,12 @@
 <title>Sports Officer Campaign | All Are Welcome</title>
 
 <style>
-* {
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,8 +44,7 @@ h1, h2, h3 {
 }
 
 .hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
+    font-size: clamp(28px, 5vw, 52px);
 }
 
 .hero span {
@@ -48,8 +52,7 @@ h1, h2, h3 {
 }
 
 .hero p {
-    font-size: 30px;
-    max-width: 800px;
+    font-size: clamp(16px, 2.5vw, 22px);
 }
 
 .btn {
@@ -119,8 +122,9 @@ footer {
     padding: 30px;
     background: #020617;
     font-size: 14px;
-    
-    .footer-logo {
+}
+
+.footer-logo {
     width: 120px;
     margin-bottom: 20px;
     transition: 0.3s ease;
@@ -140,10 +144,23 @@ footer {
     font-size: 14px;
     opacity: 0.8;
 }
-}
 
 @media (max-width: 768px) {
-    .hero h1 {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 5%;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .vs {
         font-size: 32px;
     }
 }
@@ -154,9 +171,15 @@ footer {
 
 <!-- HERO SECTION -->
 <section class="hero">
-    <h1>All Are Welcome, <br><span>You Could Be One of the Greats</span> <br>
-        <p>Vote Anuoluwapo Adeniji <br> for <br> 2026 Student Union Sports Officer</p>
-    </h1>
+    <h1>
+    All Are Welcome, <br>
+    <span>You Could Be One of the Greats</span>
+</h1>
+
+<h2 style="margin-top:20px; font-weight:600;">
+    Vote Anuoluwapo Adeniji <br>
+    for <br> 2026 Student Union Sports Officer
+</h2>
     <p>
         Sport at Manchester Metropolitan University is not about background, 
         experience, or popularity — it’s about opportunity, unity and greatness.
@@ -339,6 +362,7 @@ const countdownFunction = setInterval(function() {
 
 </body>
 </html>
+
 
 
 
